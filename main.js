@@ -39,3 +39,25 @@ document.querySelectorAll('a[href*="classpass.com/refer"]').forEach(link => {
   url.searchParams.set('utm_campaign', '917EDOUF1');
   link.href = url.toString();
 });
+
+/* ── FLOATTING BTM MOBILE ── */
+
+
+const floatingCTA = document.getElementById('floating-cta');
+const inlineBtn = document.getElementById('inline-btn');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        floatingCTA.style.display = 'block';
+      } else {
+        floatingCTA.style.display = 'none';
+      }
+    });
+  },
+  { threshold: 0 }
+);
+
+observer.observe(inlineBtn);
+

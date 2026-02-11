@@ -17,7 +17,7 @@
   --cp-border:    rgba(255,255,255,0.08);
   --radius:       14px;
   --radius-sm:    8px;
-  --font-head:    'Syne', sans-serif;
+  --font-head:    'avenir', sans-serif;
   --font-body:    'DM Sans', sans-serif;
   --transition:   0.25s cubic-bezier(0.4,0,0.2,1);
 }

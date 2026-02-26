@@ -60,6 +60,7 @@ body::after {
 .container {
   max-width: 860px;
   margin: 0 auto;
+   margin-top: 30px;
   padding: 0 24px;
   position: relative;
   z-index: 1;

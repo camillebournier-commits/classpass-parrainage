@@ -124,12 +124,16 @@ header {
 
 
 /* Background image section hero */
-.hero.offer-section {
+.hero.offer-section::before {
+  display: none;
+}
+
+.hero-bg-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.hero.offer-section::before {
+.hero-bg-wrapper::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -141,10 +145,11 @@ header {
 }
 
 /* Le contenu reste 100% opaque par-dessus */
-.hero.offer-section .container {
+.hero-bg-wrapper > * {
   position: relative;
   z-index: 1;
 }
+
 
 /* ── HERO ── */
 .hero {

@@ -122,6 +122,30 @@ header {
   border-radius: 100px;
 }
 
+
+/* Background image section hero */
+.hero.offer-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero.offer-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://raw.githubusercontent.com/camillebournier-commits/classpass-parrainage/main/bg-classpass-parrainage.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* Le contenu reste 100% opaque par-dessus */
+.hero.offer-section .container {
+  position: relative;
+  z-index: 1;
+}
+
 /* ── HERO ── */
 .hero {
   padding: 64px 0 48px;

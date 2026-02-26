@@ -128,11 +128,13 @@ header {
   display: none;
 }
 
+.hero.offer-section {
+  min-height: 100vh;
+}
 
 .hero-bg-wrapper {
   position: relative;
   overflow: hidden;
- min-height: 100vh;
 }
 
 .hero-bg-wrapper::before {

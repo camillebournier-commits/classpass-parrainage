@@ -103,7 +103,7 @@ header {
 .logo-img-real {
   width: 100%;
   height: auto;
-  max-width: 220px;   /* ajuste selon tes préférences */
+  max-width: 150px;   /* ajuste selon tes préférences */
   border-radius: 16px;
   object-fit: contain;  /* plus de crop, l'image entière est visible */
   display: block;

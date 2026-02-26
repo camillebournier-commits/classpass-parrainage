@@ -128,10 +128,6 @@ header {
   display: none;
 }
 
-.hero.offer-section {
-  padding-bottom: 35vh !important;
-}
-
 .hero-bg-wrapper {
   position: relative;
   overflow: hidden;

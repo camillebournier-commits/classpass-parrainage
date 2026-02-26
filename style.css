@@ -200,6 +200,11 @@ header {
 
 .btn-cta:hover .btn-arrow { transform: translateX(4px); }
 
+#inline-btn {
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+
 .cta-disclaimer {
   font-size: 0.78rem;
   color: rgba(255,255,255,0.38);

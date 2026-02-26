@@ -101,12 +101,12 @@ header {
 .logo-text span { color: var(--cp-teal); }
 
 .logo-img-real {
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;   /* arrondi prononcé — change à 50% pour un cercle parfait */
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 220px;   /* ajuste selon tes préférences */
+  border-radius: 16px;
+  object-fit: contain;  /* plus de crop, l'image entière est visible */
   display: block;
-  flex-shrink: 0;
 }
 
 

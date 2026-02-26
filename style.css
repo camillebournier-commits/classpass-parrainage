@@ -137,6 +137,7 @@ header {
   content: '';
   position: absolute;
   inset: 0;
+   height: 100vh;
   background-image: url('https://raw.githubusercontent.com/camillebournier-commits/classpass-parrainage/main/bg-classpass-parrainage.png');
   background-size: cover;
   background-position: center;

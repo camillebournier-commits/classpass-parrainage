@@ -335,6 +335,8 @@ header {
   gap: 24px;
   flex-wrap: wrap;
   margin-bottom: 36px;
+   margin-top: 36px;
+
 }
 
 .offer-item {

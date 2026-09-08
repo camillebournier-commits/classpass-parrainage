@@ -2,18 +2,23 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <!-- Bloque la transmission du domaine d'origine -->
-  <meta name="referrer" content="no-referrer">
-  <meta name="robots" content="noindex, nofollow">
   <title>Redirection...</title>
+  <!-- Masque l'adresse d'origine (HTTP Referer) -->
+  <meta name="referrer" content="no-referrer">
+  <script>
+    window.onload = function() {
+      // 1. URL cible avec le code de parrainage uniquement
+      var targetUrl = "https://classpass.com/refer/LR9JGRRP21";
+      
+      // 2. Encapsulation dans un proxy d'anonymisation pour masquer l'adresse IP et la provenance
+      var anonymousUrl = "https://nullrefer.com/?" + encodeURIComponent(targetUrl);
+      
+      // 3. Redirection automatique
+      window.location.replace(anonymousUrl);
+    };
+  </script>
 </head>
 <body>
-  <script>
-    // Force la suppression du Referer et redirige l'utilisateur
-    var targetUrl = "https://classpass.com/refer/LR9JGRRP21";
-    
-    // Redirection propre via remplacement d'emplacement
-    window.location.replace(targetUrl);
-  </script>
+  <p>Redirection en cours vers une connexion sécurisée...</p>
 </body>
 </html>

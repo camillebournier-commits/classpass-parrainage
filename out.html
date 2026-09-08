@@ -2,23 +2,28 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Redirection...</title>
-  <!-- Masque l'adresse d'origine (HTTP Referer) -->
+  <!-- Indique à tous les navigateurs de masquer totalement l'URL d'origine -->
   <meta name="referrer" content="no-referrer">
-  <script>
-    window.onload = function() {
-      // 1. URL cible avec le code de parrainage uniquement
-      var targetUrl = "https://classpass.com/refer/LR9JGRRP21";
-      
-      // 2. Encapsulation dans un proxy d'anonymisation pour masquer l'adresse IP et la provenance
-      var anonymousUrl = "https://nullrefer.com/?" + encodeURIComponent(targetUrl);
-      
-      // 3. Redirection automatique
-      window.location.replace(anonymousUrl);
-    };
-  </script>
+  <title>Redirection...</title>
 </head>
 <body>
-  <p>Redirection en cours vers une connexion sécurisée...</p>
+
+  <!-- Lien sécurisé avec l'attribut rel="noreferrer" -->
+  <a id="parrainage" href="https://classpass.com/refer/LR9JGRRP21" rel="noreferrer">
+    Cliquez ici pour récupérer vos crédits
+  </a>
+
+  <script>
+    // Redirection automatique tout en appliquant la politique no-referrer
+    window.onload = function() {
+      var link = document.getElementById('parrainage');
+      // Crée une ouverture propre pour ne pas transmettre la page source
+      var a = document.createElement('a');
+      a.href = link.href;
+      a.rel = 'noreferrer';
+      document.body.appendChild(a);
+      a.click();
+    };
+  </script>
 </body>
 </html>

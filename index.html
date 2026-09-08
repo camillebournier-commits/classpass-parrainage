@@ -140,7 +140,11 @@
   <header>
     <div class="container">
       <div class="header-inner">
-          <a href="/out.html"" class="logo-wrap" rel="noopener" aria-label="ClassPass – Lien de parrainage" title="ClassPass – Lien de parrainage Code promo">
+          <a href="https://classpass.com/refer/LR9JGRRP21" 
+  onclick="goToOffer(event)" 
+  class="btn-cta" 
+  rel="noreferrer noopener" 
+  target="_blank" class="logo-wrap" aria-label="ClassPass – Lien de parrainage" title="ClassPass – Lien de parrainage Code promo">
         <span class="badge-parrainage">ClassPass Parrainage</span>
           </a>
         <span class="badge-parrainage">Offre Parrainage</span>
@@ -168,11 +172,11 @@
 
 
           <a
-            href="/out.html""
-            class="btn-cta"
-              id="inline-btn"
-            rel="nofollow sponsored noopener noreferrer"
-            target="_blank"
+            href="https://classpass.com/refer/LR9JGRRP21" 
+  onclick="goToOffer(event)" 
+  class="btn-cta" 
+  rel="noreferrer noopener" 
+  target="_blank"
             aria-label="Je profite de l'offre"
             title="ClassPass – Lien de parrainage Code promo"
           >
@@ -399,10 +403,11 @@
   </div>
 </section>
         <a
-          href="/out.html""
-          class="btn-cta"
-          rel="nofollow sponsored noopener noreferrer"
-          target="_blank"
+          href="https://classpass.com/refer/LR9JGRRP21" 
+  onclick="goToOffer(event)" 
+  class="btn-cta" 
+  rel="noreferrer noopener" 
+  target="_blank"
           aria-label="Je commence mon mois gratuit sur ClassPass"
         >
           Je commence mon mois gratuit
@@ -423,10 +428,11 @@
           Offre réservée aux nouveaux membres. Les montants et durées peuvent varier selon les villes et les périodes.
         </p>
         <a
-          href="/out.html""
-          class="footer-link"
-          rel="nofollow sponsored noopener noreferrer"
-          target="_blank"
+          href="https://classpass.com/refer/LR9JGRRP21" 
+  onclick="goToOffer(event)" 
+  class="btn-cta" 
+  rel="noreferrer noopener" 
+  target="_blank"
         >
           Voir l'offre →
         </a>
@@ -437,10 +443,11 @@
   <!-- ═══════════════ FLOATING CTA (mobile) ═══════════════ -->
 <div class="floating-cta" id="floating-cta" aria-label="Bouton d'action fixe – mobile" style="display:none;">
     <a
-      href="/out.html""
-      class="btn-cta"
-      rel="nofollow sponsored noopener noreferrer"
-      target="_blank"
+     href="https://classpass.com/refer/LR9JGRRP21" 
+  onclick="goToOffer(event)" 
+  class="btn-cta" 
+  rel="noreferrer noopener" 
+  target="_blank"
       aria-label="Je profite de la promo"
     >
       Je profite de l'offre →
@@ -450,6 +457,21 @@
   <!-- ═══════════════ JAVASCRIPT ═══════════════ -->
   <script src="main.js" defer></script>
   
-
+<script>
+  function goToOffer(e) {
+    e.preventDefault();
+    // Création d'une balise 'a' temporaire avec politique de confidentialité des données
+    var link = document.createElement('a');
+    link.href = 'https://classpass.com/refer/LR9JGRRP21';
+    link.rel = 'noreferrer noopener';
+    link.referrerPolicy = 'no-referrer';
+    link.target = '_blank';
+    
+    // Déclenchement du clic sans transmettre le Referer du site
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
 </body>
 </html>
